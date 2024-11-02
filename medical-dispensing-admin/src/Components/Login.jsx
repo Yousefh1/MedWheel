@@ -4,7 +4,9 @@ import { Form, Button, Alert } from "react-bootstrap";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "../Components/firebaseConfig.js"; // Adjust path as needed
 import "./login.css"; // Ensure this file has your custom styling
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
+import {useAuth} from './AuthContext'
+
 
 
 
@@ -13,6 +15,8 @@ const Login = () => {
   const [inputPassword, setInputPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const { currentUser } = useAuth();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,6 +24,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, inputEmail, inputPassword);
       console.log("Successfully logged in!");
+      navigate("/admin");
     } catch (error) {
       console.error("Login error:", error.code, error.message);
       setError("Failed to log in: " + error.message);
