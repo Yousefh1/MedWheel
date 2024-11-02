@@ -1,0 +1,68 @@
+/* src/components/AdminDashboard.css */
+
+/* General Dashboard Styling */
+.admin-dashboard {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    color: #2f27ce;
+    font-weight: bold;
+  }
+  
+  .medication-table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table thead th {
+    background-color: #2f27ce;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  .button-primary {
+    background-color: #2f27ce;
+    color: #fff;
+  }
+  
+  button.btn-warning {
+    color: #ffffff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+  
+  button.btn-danger {
+    color: #ffffff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  
+  /* Modal Styling */
+  .modal-header {
+    background-color: #2f27ce;
+    color: #ffffff;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  button.btn-primary.w-100 {
+    background-color: #443dff;
+    border: none;
+  }
+  

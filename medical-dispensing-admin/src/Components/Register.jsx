@@ -5,6 +5,10 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, googleProvider } from "../Components/firebaseConfig.js"; // Adjust the path if needed
 import { Link } from "react-router-dom";
 import "./login.css"; // Reuse the same CSS for consistent styling
+import { Container, Nav, Navbar} from 'react-bootstrap';
+import MedWheelLogo from '../assets/MedWheel_LargeLogo.png';
+
+
 
 
 
@@ -42,6 +46,26 @@ const Register = () => {
       className="sign-in__wrapper"
       
     >
+         <Navbar bg="primary" variant="dark" expand="lg" sticky="top" className="shadow-sm">
+        <Container>
+        <Navbar.Brand href="/">
+            <img
+              src={MedWheelLogo}
+              alt="MedWheel Logo"
+              height="80" // Adjust the size as needed
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/admin">Admin</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <div className="sign-in__backdrop"></div>
       <Form className="shadow p-4 bg-white rounded" onSubmit={handleRegister}>
         <img

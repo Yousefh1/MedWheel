@@ -12,7 +12,7 @@ const About = () => {
             <img
               src={MedWheelLogo}
               alt="MedWheel Logo"
-              height="40" // Adjust the size as needed
+              height="80" // Adjust the size as needed
               className="d-inline-block align-top"
             />
           </Navbar.Brand>

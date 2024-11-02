@@ -2,6 +2,8 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button, Row, Col, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import MedWheelLogo from '../assets/MedWheel_LargeLogo.png';
+
 // import './components/Home.css';
 
 const style = {
@@ -27,7 +29,14 @@ const Home = () => {
         <div style={style.body}></div>
       <Navbar bg="primary" variant="dark" expand="lg" sticky="top" className="shadow-sm">
         <Container>
-          <Navbar.Brand href="/">MyBrand</Navbar.Brand>
+        <Navbar.Brand href="/">
+            <img
+              src={MedWheelLogo}
+              alt="MedWheel Logo"
+              height="40" // Adjust the size as needed
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
@@ -111,7 +120,7 @@ const Home = () => {
       {/* Call to Action Section */}
       <section className="cta-section text-white text-center py-5" style={{ backgroundColor: '#3a31d8' }}>
         <Container>
-          <h2 className="font-weight-bold">Ready to Grow Your Business?</h2>
+          <h2 className="font-weight-bold">Ready to help people live easier?</h2>
           <p className="lead">Contact us today and see how we can make a difference for you.</p>
           <Button variant="light" size="lg" href="/contact" className="mt-3">Get in Touch</Button>
         </Container>
