@@ -1,0 +1,80 @@
+/* src/App.css */
+
+/* Navigation Bar */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #3a31d8, #7367f0);
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Features Section */
+  .features-section {
+    background-color: #f9f9f9;
+  }
+  
+  .features-section h2 {
+    font-weight: 600;
+    color: #3a31d8;
+    margin-bottom: 2rem;
+  }
+  
+  .features-section .card {
+    border: none;
+    transition: transform 0.3s;
+  }
+  
+  .features-section .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #ffffff;
+  }
+  
+  .testimonials-section h2 {
+    color: #3a31d8;
+    margin-bottom: 2rem;
+  }
+  
+  blockquote {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    padding: 3rem 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #3a31d8;
+    color: white;
+  }
+  
+  .footer a {
+    color: #d0ccf4;
+  }
+  
+  .footer a:hover {
+    color: #ffffff;
+  }
+  

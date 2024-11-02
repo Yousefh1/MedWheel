@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import About from "./components/About";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
+
 const App = () => {
   return (
     <Router>

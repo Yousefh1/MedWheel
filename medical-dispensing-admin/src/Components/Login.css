@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400&display=swap');
+
+
+
+.sign-in__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', 'Space Mono', sans-serif;
+
+  }
+  
+  .sign-in__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .sign-in__wrapper form {
+    width: 24rem;
+    max-width: 90%;
+    z-index: 1;
+    animation: showSignInForm 1s;
+  }
+  
+  .sign-in__wrapper form img {
+    width: 4rem;
+  }
+  
+  @keyframes showSignInForm {
+    0%,
+    30% {
+      transform: translate(0, -150%);
+    }
+    70%,
+    90% {
+      transform: translate(0, 1rem);
+    }
+    80%,
+    100% {
+      transform: translate(0, 0);
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: 'Poppins', sans-serif; /* Heading with Poppins */
+        font-weight: 700; /* Set heading weights as desired (e.g., 700 for bold) */
+      }
+      
+      p {
+        font-family: 'Space Mono', monospace; /* Apply Space Mono for specific elements, like paragraphs */
+      }
+  }
+  
